@@ -4,9 +4,11 @@ if (tg) tg.expand();
 
 const btn = document.getElementById("btn");
 
-button.onclick = () => {
-  Telegram.WebApp.sendData("test");
-;
+btn.addEventListener("click", async () => {
+
+    const user = tg?.initDataUnsafe?.user;
+
+    const leadText =
 `NEW LEAD
 
 Name: ${user?.first_name || "Unknown"}
@@ -18,4 +20,4 @@ Service: General Inquiry`;
     alert("Inquiry sent!");
 
     tg.sendData(leadText);
-};
+});
