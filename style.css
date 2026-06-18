@@ -1,26 +1,15 @@
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 80px;
 
-    /* background (optional - remove if not using image yet) */
-    background-image: url("img/HPI logo.png");
+    /* optional background */
+    background-image: url("img/HPI logo.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     min-height: 100vh;
-    color: white;
 }
 
-button {
-    padding: 12px 20px;
-    font-size: 16px;
-    cursor: pointer;
-
-    border: none;
-    border-radius: 6px;
-}
-
+/* iPhone-style notification bar */
 .notification {
     position: fixed;
     top: 15px;
