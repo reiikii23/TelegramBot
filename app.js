@@ -11,13 +11,13 @@ btn.addEventListener("click", async () => {
     const leadText =
 `NEW LEAD
 
-Name: ${user?.first_name || "Unknown"}
-Username: @${user?.username || "none"}
-Telegram ID: ${user?.id}
+Name: ${user?.first_name || "HYTEC Admin Leads"}
+Username: @${user?.username || "@skyleryun_08"}
+Telegram ID: ${user?.id || "-1003953400781"}
 
 Service: General Inquiry`;
 
-    alert("Inquiry sent!");
+    alert("Quotation sent!");
 
     tg.sendData(leadText);
 });
