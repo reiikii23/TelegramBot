@@ -1,0 +1,24 @@
+{
+  "name": "my-mini-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reiikii23/TelegramBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/reiikii23/TelegramBot/issues"
+  },
+  "homepage": "https://github.com/reiikii23/TelegramBot#readme",
+  "dependencies": {
+    "node-telegram-bot-api": "^1.1.0"
+  }
+}

@@ -1,24 +1,23 @@
 const tg = window.Telegram?.WebApp;
 
-if (tg) {
-    tg.expand();
-}
+if (tg) tg.expand();
 
 const btn = document.getElementById("btn");
 
-btn.addEventListener("click", () => {
+btn.addEventListener("click", async () => {
 
     const user = tg?.initDataUnsafe?.user;
 
-    const lead = {
-        telegram_id: user?.id || null,
-        name: user?.first_name || "Unknown",
-        username: user?.username || null,
-        service: "General Inquiry",
-        timestamp: new Date().toISOString()
-    };
+    const leadText =
+`NEW LEAD
 
-    console.log("Lead captured:", lead);
+Name: ${user?.first_name || "Unknown"}
+Username: @${user?.username || "none"}
+Telegram ID: ${user?.id}
 
-    alert("Inquiry sent. Our team will contact you.");
+Service: General Inquiry`;
+
+    alert("Inquiry sent!");
+
+    tg.sendData(leadText);
 });
